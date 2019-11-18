@@ -1,6 +1,6 @@
 # shar2
 Shar2 archiver
-<code><pre>
+
 Shar2 version 0 [18.11.2019 22:36]. File archiving utility.
 Copyright (c) 2019 ConeXware, Inc.  All Rights Reserved.
 Written by Eugene D. Shelwien.
@@ -28,4 +28,3 @@ Links/junctions are not preserved (added as what they point to).
 
 3. shar2 archive format uses signatures to terminate the files and data streams.
 Thus it's possible to edit the stored archive file, then still extract the archive.
-</pre></code>
