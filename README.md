@@ -1,6 +1,6 @@
 # shar2
 Shar2 archiver
-
+<code><pre>
 Shar2 version 0 [18.11.2019 22:36]. File archiving utility.
 Copyright (c) 2019 ConeXware, Inc.  All Rights Reserved.
 Written by Eugene D. Shelwien.
@@ -18,7 +18,7 @@ Usage:
 
   shar x archive base -- extract files/dirs from archive to base\
   shar x - base       -- extract from stdin to base\
-
+</pre></code>
 Notes:
 
 1. File/dir attributes, streams, security info, timestamps are not preserved.
