@@ -18,7 +18,7 @@ Usage:
 
   shar x archive base -- extract files/dirs from archive to base\
   shar x - base       -- extract from stdin to base\
-
+</pre></code>
 Notes:
 
 1. File/dir attributes, streams, security info, timestamps are not preserved.
@@ -28,4 +28,3 @@ Links/junctions are not preserved (added as what they point to).
 
 3. shar2 archive format uses signatures to terminate the files and data streams.
 Thus it's possible to edit the stored archive file, then still extract the archive.
-</pre></code>
