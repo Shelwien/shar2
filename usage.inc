@@ -1,6 +1,6 @@
 
 char msg_logo[] = 
-"Shar2 version 0 [18.11.2019 22:36]. File archiving utility.\n"
+"Shar2 version 0 [19.11.2019 17:29]. File archiving utility.\n"
 "Copyright (c) 2019 ConeXware, Inc.  All Rights Reserved.\n"
 "Written by Eugene D. Shelwien.\n"
 "\n"

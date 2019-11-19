@@ -82,6 +82,8 @@ struct Archive {
     A.flush_out2( g );
 
     A.Z.Quit();
+
+    return 0;
   }
 
 };

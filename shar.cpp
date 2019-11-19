@@ -5,6 +5,8 @@
 #endif
 
 #include "common.inc"
+#include <io.h>
+#include <direct.h>
 
 #ifdef _WIN32
 //#include "file_api_win.inc"
@@ -40,6 +42,7 @@ struct copy_Codec : Coroutine {
 
   uint Init( uint cLevel=0, uint winlog=-1 ) {
     coro_init(); 
+    return 0;
   }
 
   void Quit( void ) {
@@ -80,7 +83,7 @@ int main_utf8( int argc, char** argv ) {
   }
 
   uint r, f_UNP = (argv[1][0]=='x');
-  char* path = argc<4 ? f_UNP? "" : "./" : argv[3];
+  char* path = (char*)( argc<4 ? f_UNP? "" : "./" : argv[3] );
 
   if( strlen(argv[1])>=2 ) cfg_level=atoi(&argv[1][1]);
 
