@@ -1,0 +1,260 @@
+In file included from src/shar.cpp:29:0:
+src/dir_scan.inc:16:0: warning: "_mkdir" redefined
+ #define _mkdir(X) mkdir(X,S_IRWXU|S_IRWXG|S_IROTH|S_IXOTH)
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from src/shar.cpp:29:0:
+src/dir_scan.inc:110:47: warning: multi-character character constant [-Wmultichar]
+       if( ((c&0xFFFF)=='.') || ((c&0xFFFFFF)=='..') ) continue;
+                                               ^~~~
+In file included from src/shar.cpp:23:0:
+./Lib3/coro_fhp2.inc: In member function ‘void CoroFileProc<Model>::processfile(filehandle, filehandle, byte*, byte*)’:
+./Lib3/coro_fhp2.inc:15:5: warning: there are no arguments to ‘coro_init’ that depend on a template parameter, so a declaration of ‘coro_init’ must be available [-fpermissive]
+     coro_init();
+     ^~~~~~~~~
+./Lib3/coro_fhp2.inc:17:22: warning: there are no arguments to ‘addinp’ that depend on a template parameter, so a declaration of ‘addinp’ must be available [-fpermissive]
+     if( _inpptr!=0 ) addinp( _inpptr, _inpend-_inpptr );
+                      ^~~~~~
+./Lib3/coro_fhp2.inc:27:13: warning: there are no arguments to ‘getoutsize’ that depend on a template parameter, so a declaration of ‘getoutsize’ must be available [-fpermissive]
+         l = getoutsize();
+             ^~~~~~~~~~
+In file included from src/shar.cpp:24:0:
+./Lib3/coro_fh_inp.inc: In member function ‘qword CoroFileProcInp<Model>::processfile(filehandle, Coroutine*)’:
+./Lib3/coro_fh_inp.inc:15:5: warning: there are no arguments to ‘coro_init’ that depend on a template parameter, so a declaration of ‘coro_init’ must be available [-fpermissive]
+     coro_init();
+     ^~~~~~~~~
+./Lib3/coro_fh_inp.inc:25:13: warning: there are no arguments to ‘getoutsize’ that depend on a template parameter, so a declaration of ‘getoutsize’ must be available [-fpermissive]
+         l = getoutsize();
+             ^~~~~~~~~~
+./Lib3/coro_fh_inp.inc:28:21: warning: there are no arguments to ‘addout’ that depend on a template parameter, so a declaration of ‘addout’ must be available [-fpermissive]
+ AddOut: Q.chkout(); addout( (byte*)Q.outptr, Q.getoutlen() );
+                     ^~~~~~
+In file included from src/shar.cpp:25:0:
+./Lib3/coro_fh_out.inc: In member function ‘void CoroFileProcOut<Model>::init()’:
+./Lib3/coro_fh_out.inc:13:5: warning: there are no arguments to ‘coro_init’ that depend on a template parameter, so a declaration of ‘coro_init’ must be available [-fpermissive]
+     coro_init();
+     ^~~~~~~~~
+./Lib3/coro_fh_out.inc: In member function ‘qword CoroFileProcOut<Model>::processfile(filehandle, Coroutine*, uint)’:
+./Lib3/coro_fh_out.inc:29:9: warning: there are no arguments to ‘addinp’ that depend on a template parameter, so a declaration of ‘addinp’ must be available [-fpermissive]
+         addinp( (byte*)Q.pin[i].ptr, l ); Q.pin[i].ptr+=l;
+         ^~~~~~
+./Lib3/coro_fh_out.inc:31:13: warning: there are no arguments to ‘getoutsize’ that depend on a template parameter, so a declaration of ‘getoutsize’ must be available [-fpermissive]
+         l = getoutsize();
+             ^~~~~~~~~~
+./Lib3/coro_fh_out.inc:40:5: warning: there are no arguments to ‘addinp’ that depend on a template parameter, so a declaration of ‘addinp’ must be available [-fpermissive]
+     addinp( 0, 0 ); // get it to redo chkinp
+     ^~~~~~
+In file included from src/shar.cpp:34:0:
+src/archive.inc: At global scope:
+src/archive.inc:23:21: warning: attribute ignored in declaration of ‘union Archive<zstd_Codec>::<unnamed>’ [-Wattributes]
+   ALIGN(4096) union {
+                     ^
+src/archive.inc:23:21: note: attribute for ‘union Archive<zstd_Codec>::<unnamed>’ must follow the ‘union’ keyword
+In file included from src/shar.cpp:34:0:
+src/archive.inc: In member function ‘uint Archive<zstd_Codec>::zstd_Codec_Enc::Init(uint, uint)’:
+src/archive.inc:9:50: warning: there are no arguments to ‘init’ that depend on a template parameter, so a declaration of ‘init’ must be available [-fpermissive]
+     uint Init( uint cLevel=0, uint winlog=-1 ) { init(); return this->M1.Init(cLevel,winlog); }
+                                                  ^~~~
+src/archive.inc: In member function ‘uint Archive<zstd_Codec>::zstd_Codec_Dec::Init(uint, uint)’:
+src/archive.inc:15:50: warning: there are no arguments to ‘init’ that depend on a template parameter, so a declaration of ‘init’ must be available [-fpermissive]
+     uint Init( uint cLevel=0, uint winlog=-1 ) { init(); return this->M2.Init(cLevel,winlog); }
+                                                  ^~~~
+src/shar.cpp: At global scope:
+src/shar.cpp:65:14: warning: attribute ignored in declaration of ‘union<unnamed>’ [-Wattributes]
+ static union {
+              ^
+src/shar.cpp:65:14: note: attribute for ‘union<unnamed>’ must follow the ‘union’ keyword
+src/shar.cpp: In function ‘int main_utf8(int, char**)’:
+src/shar.cpp:80:22: warning: format not a string literal and no format arguments [-Wformat-security]
+     printf( msg_logo );
+                      ^
+src/shar.cpp:81:23: warning: format not a string literal and no format arguments [-Wformat-security]
+     printf( msg_usage );
+                       ^
+In file included from src/shar.cpp:23:0:
+./Lib3/coro_fhp2.inc: In instantiation of ‘void CoroFileProc<Model>::processfile(filehandle, filehandle, byte*, byte*) [with Model = CoroutinePair<Archive<zstd_Codec>::zstd_Codec_Dec, Archive<zstd_Codec>::dirparse>; byte = unsigned char]’:
+src/archive.inc:58:5:   required from ‘uint Archive<zstd_Codec>::Shar_Extract(filehandle&, char*, uint) [with zstd_Codec = zstd_Codec; uint = unsigned int]’
+src/shar.cpp:93:41:   required from here
+./Lib3/coro_fhp2.inc:16:11: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     addout( outbuf, outbufsize );
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:16:11: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:16:11: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc:17:28: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if( _inpptr!=0 ) addinp( _inpptr, _inpend-_inpptr );
+                      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:17:28: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:17:28: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:20:20: warning: ‘coro_call’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       r = coro_call(this);
+           ~~~~~~~~~^~~~~~
+./Lib3/coro_fhp2.inc:20:20: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:20:20: note: use ‘this->coro_call’ instead
+./Lib3/coro_fhp2.inc:25:15: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addinp( inpbuf, l );
+         ~~~~~~^~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:25:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:25:15: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:30:15: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addout( outbuf, outbufsize );
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:30:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:30:15: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc: In instantiation of ‘void CoroFileProc<Model>::processfile(filehandle, filehandle, byte*, byte*) [with Model = Archive<zstd_Codec>::dirparse2; byte = unsigned char]’:
+src/archive.inc:63:5:   required from ‘uint Archive<zstd_Codec>::Shar_Extract(filehandle&, char*, uint) [with zstd_Codec = zstd_Codec; uint = unsigned int]’
+src/shar.cpp:93:41:   required from here
+./Lib3/coro_fhp2.inc:16:11: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     addout( outbuf, outbufsize );
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:16:11: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:16:11: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc:17:28: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if( _inpptr!=0 ) addinp( _inpptr, _inpend-_inpptr );
+                      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:17:28: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:17:28: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:20:20: warning: ‘coro_call’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       r = coro_call(this);
+           ~~~~~~~~~^~~~~~
+./Lib3/coro_fhp2.inc:20:20: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:20:20: note: use ‘this->coro_call’ instead
+./Lib3/coro_fhp2.inc:25:15: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addinp( inpbuf, l );
+         ~~~~~~^~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:25:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:25:15: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:30:15: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addout( outbuf, outbufsize );
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:30:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:30:15: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc: In instantiation of ‘void CoroFileProc<Model>::processfile(filehandle, filehandle, byte*, byte*) [with Model = CoroutinePair<Archive<copy_Codec>::zstd_Codec_Dec, Archive<copy_Codec>::dirparse>; byte = unsigned char]’:
+src/archive.inc:58:5:   required from ‘uint Archive<zstd_Codec>::Shar_Extract(filehandle&, char*, uint) [with zstd_Codec = copy_Codec; uint = unsigned int]’
+src/shar.cpp:106:43:   required from here
+./Lib3/coro_fhp2.inc:16:11: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     addout( outbuf, outbufsize );
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:16:11: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:16:11: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc:17:28: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if( _inpptr!=0 ) addinp( _inpptr, _inpend-_inpptr );
+                      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:17:28: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:17:28: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:20:20: warning: ‘coro_call’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       r = coro_call(this);
+           ~~~~~~~~~^~~~~~
+./Lib3/coro_fhp2.inc:20:20: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:20:20: note: use ‘this->coro_call’ instead
+./Lib3/coro_fhp2.inc:25:15: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addinp( inpbuf, l );
+         ~~~~~~^~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:25:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:25:15: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:30:15: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addout( outbuf, outbufsize );
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:30:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:30:15: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc: In instantiation of ‘void CoroFileProc<Model>::processfile(filehandle, filehandle, byte*, byte*) [with Model = Archive<copy_Codec>::dirparse2; byte = unsigned char]’:
+src/archive.inc:63:5:   required from ‘uint Archive<zstd_Codec>::Shar_Extract(filehandle&, char*, uint) [with zstd_Codec = copy_Codec; uint = unsigned int]’
+src/shar.cpp:106:43:   required from here
+./Lib3/coro_fhp2.inc:16:11: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     addout( outbuf, outbufsize );
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:16:11: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:16:11: note: use ‘this->addout’ instead
+./Lib3/coro_fhp2.inc:17:28: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     if( _inpptr!=0 ) addinp( _inpptr, _inpend-_inpptr );
+                      ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:17:28: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:17:28: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:20:20: warning: ‘coro_call’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       r = coro_call(this);
+           ~~~~~~~~~^~~~~~
+./Lib3/coro_fhp2.inc:20:20: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:20:20: note: use ‘this->coro_call’ instead
+./Lib3/coro_fhp2.inc:25:15: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addinp( inpbuf, l );
+         ~~~~~~^~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:25:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:25:15: note: use ‘this->addinp’ instead
+./Lib3/coro_fhp2.inc:30:15: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addout( outbuf, outbufsize );
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fhp2.inc:30:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fhp2.inc:30:15: note: use ‘this->addout’ instead
+In file included from src/shar.cpp:24:0:
+./Lib3/coro_fh_inp.inc: In instantiation of ‘qword CoroFileProcInp<Model>::processfile(filehandle, Coroutine*) [with Model = Wrapper<0>; qword = long long unsigned int]’:
+src/dirstore.inc:41:24:   required from ‘void Archive<zstd_Codec>::dirstore::do_process() [with zstd_Codec = copy_Codec]’
+./Lib3/coro3b.inc:91:34:   required from ‘uint Coroutine::coro_call(T*) [with T = Archive<copy_Codec>::dirstore; uint = unsigned int]’
+src/dirstore.inc:87:9:   required from ‘void Archive<zstd_Codec>::dirstore::processfile(filehandle) [with zstd_Codec = copy_Codec]’
+src/archive.inc:81:5:   required from ‘uint Archive<zstd_Codec>::Shar_Create(filehandle&, char*, uint, uint) [with zstd_Codec = copy_Codec; uint = unsigned int]’
+src/shar.cpp:118:52:   required from here
+./Lib3/coro_fh_inp.inc:19:20: warning: ‘coro_call’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       r = coro_call(this);
+           ~~~~~~~~~^~~~~~
+./Lib3/coro_fh_inp.inc:19:20: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_inp.inc:19:20: note: use ‘this->coro_call’ instead
+./Lib3/coro_fh_inp.inc:23:15: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addinp( inpbuf, l );
+         ~~~~~~^~~~~~~~~~~~~
+./Lib3/coro_fh_inp.inc:23:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_inp.inc:23:15: note: use ‘this->addinp’ instead
+./Lib3/coro_fh_inp.inc:28:27: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+ AddOut: Q.chkout(); addout( (byte*)Q.outptr, Q.getoutlen() );
+                     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fh_inp.inc:28:27: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_inp.inc:28:27: note: use ‘this->addout’ instead
+In file included from src/shar.cpp:25:0:
+./Lib3/coro_fh_out.inc: In instantiation of ‘qword CoroFileProcOut<Model>::processfile(filehandle, Coroutine*, uint) [with Model = Wrapper<1>; qword = long long unsigned int; uint = unsigned int]’:
+src/dirparse.inc:36:11:   required from ‘void Archive<zstd_Codec>::dirparse::do_process() [with zstd_Codec = zstd_Codec]’
+./Lib3/coro3b.inc:91:34:   required from ‘uint Coroutine::coro_call(T*) [with T = Archive<zstd_Codec>::dirparse; uint = unsigned int]’
+./Lib3/coro2pair.inc:29:5:   required from ‘void CoroutinePair<Model1, Model2>::do_process() [with Model1 = Archive<zstd_Codec>::zstd_Codec_Dec; Model2 = Archive<zstd_Codec>::dirparse]’
+./Lib3/coro3b.inc:91:34:   required from ‘uint Coroutine::coro_call(T*) [with T = CoroFileProc<CoroutinePair<Archive<zstd_Codec>::zstd_Codec_Dec, Archive<zstd_Codec>::dirparse> >; uint = unsigned int]’
+./Lib3/coro_fhp2.inc:20:20:   required from ‘void CoroFileProc<Model>::processfile(filehandle, filehandle, byte*, byte*) [with Model = CoroutinePair<Archive<zstd_Codec>::zstd_Codec_Dec, Archive<zstd_Codec>::dirparse>; byte = unsigned char]’
+src/archive.inc:58:5:   required from ‘uint Archive<zstd_Codec>::Shar_Extract(filehandle&, char*, uint) [with zstd_Codec = zstd_Codec; uint = unsigned int]’
+src/shar.cpp:93:41:   required from here
+./Lib3/coro_fh_out.inc:22:11: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     addout( outbuf, outbufsize );
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fh_out.inc:22:11: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_out.inc:22:11: note: use ‘this->addout’ instead
+./Lib3/coro_fh_out.inc:25:20: warning: ‘coro_call’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       r = coro_call(this);
+           ~~~~~~~~~^~~~~~
+./Lib3/coro_fh_out.inc:25:20: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_out.inc:25:20: note: use ‘this->coro_call’ instead
+./Lib3/coro_fh_out.inc:29:15: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addinp( (byte*)Q.pin[i].ptr, l ); Q.pin[i].ptr+=l;
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fh_out.inc:29:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_out.inc:29:15: note: use ‘this->addinp’ instead
+./Lib3/coro_fh_out.inc:35:15: warning: ‘addout’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+         addout( outbuf, outbufsize );
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+./Lib3/coro_fh_out.inc:35:15: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_out.inc:35:15: note: use ‘this->addout’ instead
+./Lib3/coro_fh_out.inc:40:11: warning: ‘addinp’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+     addinp( 0, 0 ); // get it to redo chkinp
+     ~~~~~~^~~~~~~~
+./Lib3/coro_fh_out.inc:40:11: note: declarations in dependent base ‘Coroutine’ are not found by unqualified lookup
+./Lib3/coro_fh_out.inc:40:11: note: use ‘this->addinp’ instead
+In file included from ./Lib3/coro3b.inc:12:0,
+                 from src/shar.cpp:18:
+./Lib3/coro3_setjmp_x64.h: At global scope:
+./Lib3/coro3_setjmp_x64.h:23:6: warning: always_inline function might not be inlinable [-Wattributes]
+ void my_jmp( my_jmpbuf* regs, int ) {
+      ^~~~~~
+./Lib3/coro3_setjmp_x64.h:9:5: warning: always_inline function might not be inlinable [-Wattributes]
+ int my_setjmp( my_jmpbuf* regs ) {
+     ^~~~~~~~~
+In file included from zstd/zbuff_compress.inc:17:0,
+                 from zstd/zstd.cpp:13:
+zstd/zstd_internal.h:59:0: warning: "CHECK_F" redefined
+ #define CHECK_F(f) { size_t const errcod = f; if (ERR_isError(errcod)) return errcod; }  /* check and Forward error code */
+ 
+In file included from zstd/zstd.cpp:6:0:
+zstd/fse_decompress.inc:75:0: note: this is the location of the previous definition
+ #define CHECK_F(f) { size_t const e = f; if (FSE_isError(e)) return e; }
+ 
