@@ -26,7 +26,7 @@ set gcc=C:\clang801x\bin\clang++.exe
 
 del *.exe *.o
 
-%gcc% -v -s %arch% -O9 -std=c++1y %incs% %opts% shar.cpp zstd/zstd.cpp C:\VC2019\lib\amd64\oldnames.lib -static -o shar.exe
+%gcc% -v -s %arch% -O9 -std=c++11 %incs% %opts% src/shar.cpp zstd/zstd.cpp C:\VC2019\lib\amd64\oldnames.lib -static -o shar.exe
 
 del *.o
 

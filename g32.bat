@@ -17,11 +17,11 @@ rem -flto -ffat-lto-objects -Wl,-flto -fuse-linker-plugin -Wl,-O -Wl,--sort-comm
 :set gcc=C:\MinGW710\bin\g++.exe -m32 
 set gcc=C:\MinGW810\bin\g++.exe -m32
 set gcc=C:\MinGW810x\bin\g++.exe 
-set gcc=C:\MinGW820\bin\g++.exe -march=pentium2
 set gcc=C:\MinGW820x\bin\g++.exe -march=k8
+set gcc=C:\MinGW820\bin\g++.exe -march=pentium2 -m32
 set path=%gcc%\..\
 
 del *.exe *.o
 
-%gcc% -std=gnu++11 -O9 -s %incs% %opts% -static src/shar.cpp zstd/zstd.cpp -o shar.exe
+%gcc% -std=gnu++11 -O9 -s %incs% %opts% -static src/shar.cpp zstd/zstd.cpp -o shar32.exe
 

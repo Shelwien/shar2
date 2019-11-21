@@ -11,6 +11,6 @@ set icl=C:\IntelJ0070\bin-ia32\icl2a.bat
 set icl=C:\IntelJ0117\bin-ia32\icl2b.bat 
 set icl=C:\IntelJ2190\bin-ia32\icl2d.bat 
 
-call %icl% shar.cpp zstd/zstd.cpp /Feshar32.exe
+call %icl% src/shar.cpp zstd/zstd.cpp /Feshar32.exe
 
 del *.exp *.obj
