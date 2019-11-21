@@ -5,10 +5,10 @@
 #endif
 
 #include "common.inc"
-#include <io.h>
-#include <direct.h>
 
 #ifdef _WIN32
+#include <io.h>
+#include <direct.h>
 //#include "file_api_win.inc"
 #include "file_api_std.inc"
 #else
